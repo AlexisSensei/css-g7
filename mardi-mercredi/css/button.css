@@ -1,0 +1,28 @@
+.button {
+    font-family: sans-serif;
+    font-size: 37px;
+    background-color: #282828;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em 2em;
+    transition: 1s;
+}
+
+@media screen and (max-width: 800px) {
+    .button {
+        font-size: 18px;
+    }
+}
+
+.button-orange {
+    background-color: orangered;
+}
+
+.button-orange:hover {
+    background-color: #282828;
+}
+
+.button-rounded {
+    border-radius: 2em;
+}
