@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+@media screen and (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid > div:nth-of-type(1) {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.grid > div:nth-of-type(2) {
+    background-color: salmon;
+}
