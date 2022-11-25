@@ -25,3 +25,55 @@
 .grid > div:nth-of-type(2) {
     background-color: salmon;
 }
+
+main {
+    height: 500px;
+    background-color: beige;
+}
+
+.cube {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+
+}
+
+main:hover .cube {
+    animation-name: bouge;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bouge {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    50% {
+        transform: translateX(300px) translateY(0);
+        background-color: aquamarine;
+    }
+
+    100% {
+        transform: translateX(300px) translateY(250px);
+        background-color: coral;
+    }
+}
+
+.rotation {
+    display: block;
+    margin: 40px auto;
+    animation: 3s infinite linear tourne;
+}
+
+@keyframes tourne {
+    0% {
+      transform: rotate(0);  
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
